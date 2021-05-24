@@ -1,3 +1,9 @@
+/**
+ * @file seed.utils.js
+ * @description Seed utils
+ * @author Nikola Miljkovic <mnikson@gmail.com>
+ */
+
 // Libs
 const _ = require('lodash')
 

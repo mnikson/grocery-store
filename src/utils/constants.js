@@ -1,3 +1,9 @@
+/**
+ * @file constants.js
+ * @description Application constants
+ * @author Nikola Miljkovic <mnikson@gmail.com>
+ */
+
 // Verification rules
 const RULES = {
   EMAIL: 'email',

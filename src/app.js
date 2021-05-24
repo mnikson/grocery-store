@@ -1,3 +1,9 @@
+/**
+ * @file app.js
+ * @description Application main file
+ * @author Nikola Miljkovic <mnikson@gmail.com>
+ */
+
 // Libs
 const express = require('express')
 const cors = require('cors')
@@ -11,7 +17,6 @@ require('../src/database')
 
 // Routes
 const routes = require('./routes')
-const { corsMiddleware } = require('./middlewares')
 
 // App initialization
 const app = express()
@@ -22,8 +27,6 @@ app.use(express.urlencoded({
   extended: false,
   limit: REQUEST_LIMIT
 }))
-
-app.use(corsMiddleware)
 
 app.disable('x-powered-by')
 app.use(cors({

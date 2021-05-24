@@ -1,3 +1,9 @@
+/**
+ * @file error-codes.utils.js
+ * @description Errors used in application
+ * @author Nikola Miljkovic <mnikson@gmail.com>
+ */
+
 module.exports = {
   SERVER: {
     description: 'Server error occurred',

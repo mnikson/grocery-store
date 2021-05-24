@@ -1,6 +1,7 @@
 /**
- * @file auth.js
+ * @file auth.utils.js
  * @description Authentication utils
+ * @author Nikola Miljkovic <mnikson@gmail.com>
  */
 
 // Libs
@@ -39,51 +40,6 @@ const RBAC = {
   MANAGERS_LIST: 'managers-list',
   UPDATE_EMPLOYEE: 'update-employee',
   UPDATE_MANAGER: 'update-manager'
-}
-
-/**
- * Role ACL
- */
-const ROLES_ACL = {
-  [RBAC.CREATE_EMPLOYEE]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.CREATE_MANAGER]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.READ_EMPLOYEE]: [
-    ROLES.EMPLOYEE.CODE,
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.READ_MANAGER]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.UPDATE_EMPLOYEE]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.UPDATE_MANAGER]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.DELETE_MANAGER]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.DELETE_EMPLOYEE]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.EMPLOYEES_LIST]: [
-    ROLES.MANAGER.CODE,
-    ROLES.EMPLOYEE.CODE
-  ],
-  [RBAC.MANAGERS_LIST]: [
-    ROLES.MANAGER.CODE,
-    ROLES.EMPLOYEE.CODE
-  ],
-  [RBAC.STORE_MANAGERS]: [
-    ROLES.MANAGER.CODE
-  ],
-  [RBAC.STORES_MANAGERS]: [
-    ROLES.MANAGER.CODE
-  ]
 }
 
 /**
@@ -195,7 +151,6 @@ async function hasPermission(role, action) {
 module.exports = {
   RBAC,
   ROLES,
-  ROLES_ACL,
   hasPermission,
   jwtSign,
   jwtVerify,

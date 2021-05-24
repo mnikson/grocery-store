@@ -5,7 +5,6 @@
  */
 
 // Libs
-const _ = require('lodash')
 const AppError = require('../../utils/app-error.utils')
 const errorCodesUtils = require('../../utils/error-codes.utils')
 

@@ -1,6 +1,7 @@
 /**
  * @file routeConstants.js
  * @description Application route constants
+ * @author Nikola Miljkovic <mnikson@gmail.com>
  */
 
 /**
@@ -9,6 +10,7 @@
 const APP_ROUTES = {
   // auth
   LOGIN: '/login',
+  REGISTER: '/register',
   // user crud
   EMPLOYEE: '/employee',
   MANAGER: '/manager',

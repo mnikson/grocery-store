@@ -1,5 +1,7 @@
 /**
- * Authorization middleware
+ * @file auth.middleware.js
+ * @description Authentication middleware
+ * @author Nikola Miljkovic <mnikson@gmail.com>
  */
 
 // Libs

@@ -7,11 +7,8 @@
 // Routes
 const {
   loginRoute,
-  // signUpRoute
+  signUpRoute
 } = require('./auth.router.js')
-
-// Middleware
-const authMiddleware = require('../../middlewares/auth.middleware')
 
 // Utils
 const APP_ROUTES = require('../../utils/route-constants.utils')
@@ -25,5 +22,5 @@ module.exports = (router) => {
   /**
    * Sign Up
    */
-  // router.post(APP_ROUTES.REGISTER, aclMiddleware, signUpRoute)
+  router.post(APP_ROUTES.REGISTER, signUpRoute)
 }

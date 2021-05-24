@@ -1,5 +1,7 @@
 /**
- * Authorization middleware
+ * @file rbac.middleware.js
+ * @description RBAC middleware
+ * @author Nikola Miljkovic <mnikson@gmail.com>
  */
 
 // Utils
