@@ -1,0 +1,12 @@
+# packages
+node_modules
+
+# IDE
+.history
+.vscode
+
+# logs
+src/logs
+
+# config
+.env

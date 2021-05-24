@@ -1,0 +1,55 @@
+{
+  "name": "grosery-store",
+  "version": "1.0.0",
+  "description": "Grocery Store API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect bin/www",
+    "serve": "node bin/www",
+    "test": "NODE_ENV=test mocha test/*.test.js",
+    "test:watch": "NODE_ENV=test mocha test/*.test.js --watch",
+    "lint": "eslint src/",
+    "lint:fix": "eslint --fix src/",
+    "seed": "node workers/seed.js"
+  },
+  "author": "Nikola Miljkovic <mnikson@gmail.com>",
+  "license": "ISC",
+  "standard": {
+    "ignore": [
+      "/test/"
+    ],
+    "globals": [
+      "server"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "chalk": "^4.1.1",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.9",
+    "path": "^0.12.7",
+    "stdout-stream": "^1.4.1",
+    "uuid": "^8.3.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^7.26.0",
+    "faker": "^5.5.3",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7"
+  }
+}
